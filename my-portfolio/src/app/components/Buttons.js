@@ -7,13 +7,13 @@ import style from './Buttons.module.css'
 
 function Buttons(){
   const [showAlert, setShowAlert] = useState(false);
-  const handleDownloadClick = () => {
+  const Click = () => {
     setShowAlert(true);
     alert('Downloading Document');
   };
     return(
         <div className={style["buttons"]}>
-            <button className={style["btn-primary"]}onClick={handleDownloadClick}>
+            <button className={style["btn-primary"]}onClick={Click}>
                 <div className={style["btn-content"]}>
                     <p>Download CV</p>
                     <Image src={download} alt="arrow" className={style["btn-primary-img"]}/>
